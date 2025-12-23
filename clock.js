@@ -6,7 +6,7 @@ let datesDisplay = document.getElementById("dates");
 
 
 const updateDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturaday"];
-const updateMonth = [1,2,3,4,5,6,7,8,9,10];
+const updateMonth = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 const updateTime = () => {
 
@@ -21,7 +21,7 @@ const updateTime = () => {
             let monthShow = updateMonth[currentDate.getMonth()];
             let fullYearShow = currentDate.getFullYear();
 
-            datesDisplay.innerText = `${fullYearShow}-${monthShow}-${datesShow}`;
+            datesDisplay.innerText = `${datesShow}-${monthShow}-${fullYearShow}`;
 
             let hr = currentDate.getHours();
             let min = currentDate.getMinutes();
